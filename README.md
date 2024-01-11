@@ -7,57 +7,56 @@
 [![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-1.4.23-blue)](https://www.sqlalchemy.org/)
 [![httpx](https://img.shields.io/badge/httpx-0.24.1-blue)](https://www.python-httpx.org/)
 
-## Описание
+## Comprehensive Description
 
-Tegro Ton Bot - это Telegram-бот, который предназначен для работы с платежной системой Tegro.money и блокчейном TON.
+**Tegro Ton Bot** is a sophisticated Telegram bot engineered for seamless integration with the innovative Tegro.money payment system and the versatile TON blockchain network. This bot is an exemplar of modern fintech solutions, offering a range of functionalities for both casual users and blockchain enthusiasts. It serves as a gateway for users to engage in various financial transactions, leveraging the security and efficiency of the TON blockchain.
 
-Бот позволяет пользователям отправлять и получать платежи, проверять баланс и информацию о транзакциях, а также выполнять другие операции, связанные с блокчейном TON и джеттоном TGR.
+Developed initially as a test assignment, Tegro Ton Bot has evolved into a full-fledged tool for facilitating transactions in the TON ecosystem. Its primary focus is on TGR - a unique token within the TON network. Users can effortlessly purchase TGR, track their balance, and engage in transactions, all within the Telegram interface.
 
-Данный бот разрабатывался как тестовое задание. Покупка TGR в нем реализована исключительно для теста платежной системы.
+### Enriched Features
 
-## Функции
+- **TGR Purchasing:** Enables users to buy TGR tokens directly through the bot.
+- **Balance Inquiries:** Check the current balance of TGR tokens in the user's account.
+- **TON Wallet Creation:** Users can create a new wallet specifically for handling TON transactions.
+- **TGR Wallet Management:** Apart from TON, the bot also supports the creation and management of TGR wallets.
+- **Transaction Tracking:** Monitors and reports transaction activities within the TON network.
+- **TON and TGR Transactions:** Facilitates both TON and TGR transactions, ensuring a smooth financial experience.
+- **Wallet Balance Checks:** Offers a quick and easy way to verify the balances of both TON and TGR wallets.
 
-- Покупка TGR
-- Проверка баланса TGR
-- Создание кошелька TON
-- Создание кошелька TGR
-- Проверка транзакций в сети TON
-- Создание транзакций TON
-- Создание транзакций TGR
-- Проверка баланса кошелька TON
-- Проверка баланса кошелька TGR
+### Advanced Technologies
 
-## Использованные технологии
+- **Python 3.11:** The backbone of the bot, known for its simplicity and efficiency.
+- **Aiogram:** A powerful framework for building dynamic Telegram bots.
+- **FastAPI:** Known for its speed and ease of use, this framework is ideal for web application development.
+- **Uvicorn:** A lightning-fast ASGI server used to run FastAPI applications.
+- **SQLAlchemy & Alembic:** These libraries provide robust database handling and migration capabilities.
+- **httpx:** Facilitates efficient HTTP requests within the application.
+- **Redis:** An in-memory database that enhances the performance and scalability of the bot.
 
-- Python 3.11
-- [Aiogram](https://docs.aiogram.dev/en/latest/) - Python-фреймворк для создания Telegram-ботов
-- [FastAPI](https://fastapi.tiangolo.com/) - Python-фреймворк для создания веб-приложений с высокой производительностью
-- [Uvicorn](https://www.uvicorn.org/) - ASGI-сервер, используемый для запуска FastAPI
-- [SQLAlchemy](https://www.sqlalchemy.org/) - Python-библиотека для работы с реляционными базами данных
-- [Alembic](https://alembic.sqlalchemy.org/en/latest/) - Python-библиотека для миграции баз данных
-- [httpx](https://www.python-httpx.org/) - Python-библиотека для выполнения HTTP-запросов
-- [Redis](https://redis.io/) - In-memory база данных с открытым исходным кодом
+## Detailed Installation Guide
 
+1. **Telegram Bot Registration:**
+   Register your bot on Telegram using @BotFather to obtain your unique token.
 
+2. **Telegram Hook Requirement:**
+   The bot requires a public IP for Telegram Hook. For local development or testing, services like [ngrok](https://ngrok.com) can be used.
 
-## Установка
+3. **Environment Setup:**
+   Rename '.env.template' to '.env' and populate it with all the necessary environment variables.
 
-В первую очередь необходимо зарегистрировать бота в сети Telegram и получить токен. Для этого можно воспользоваться ботом @BotFather.
+4. **TON Network Integration:**
+   Download and set up the Ton-Server from [this repository](https://github.com/TGRTON/TON-token-Rest-API) to interact with the TON blockchain.
 
-Данный бот использует Telegram Hook. Следовательно для его запуска нужен белый IP, или можно использовать утилиту и сервис https://ngrok.com.
+5. **Payment Gateway Configuration:**
+   For processing payments, register your service at [Tegro.money](https://tegro.money).
 
-Перед запуском необходимо переименовать файл '.env.template' в '.env' и заполнить в нем все переменные.
+6. **Bot Launch:**
+   Run the bot from the root directory using the following command:
 
-Для работы с сетью TON необходимо скачать Ton-Server из репозитория https://github.com/TGRTON/TON-token-Rest-API и
-запустить его согласно инструкции.
-
-Для приема платежей необходимо зарегистрировать магазин в сервисе https://tegro.money.
-
-Для запуска из корневой директории выполнить:
 ```
 uvicorn src.main:app --port=80
 ```
 
-## Использование
+## Usage
 
-После ввода команды /start появляется интуитивно понятное меню. С его помощью можно протестировать весь функционал бота.
+After issuing the /start command, an intuitive menu appears. It allows testing the full functionality of the bot.
