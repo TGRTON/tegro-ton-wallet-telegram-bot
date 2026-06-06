@@ -1,3 +1,8 @@
+> ⚠️ **Archived — legacy / experimental, no longer maintained.**
+> Part of **TGRTON**, the historical home of the (retired) $TGR token and early Tegro experiments. For our active, maintained projects see the **[Tegro open-source org → github.com/TegroTON](https://github.com/TegroTON)** — DEX [tegro.finance](https://tegro.finance) · Payments [tegro.money](https://tegro.money).
+
+---
+
 # Tegro Ton Bot
 
 [![Python](https://img.shields.io/badge/Python-3.11-blue)](https://www.python.org/)
