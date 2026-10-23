@@ -2,7 +2,7 @@
 name = "tegro-bot"
 version = "0.1.0"
 description = "Tegro Bot"
-authors = ["Dmitrii Kopeikin <kopeikindp@gmail.com>"]
+authors = ["Tegro"]
 license = "MIT"
 readme = "README.md"
 packages = [{include = "tegro_bot"}]
